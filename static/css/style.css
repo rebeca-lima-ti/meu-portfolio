@@ -7,12 +7,28 @@ body {
     background-color: #f4f4f4;
     text-align: center;
 }
+
+.nome {
+    margin-bottom: 0;
+    font-size: 55px;
+    font-weight: 1000;
+    color: whitesmoke;
+}
+
+.port {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
 header {
     background-color: #333;
     color: white;
     padding: 20px;
     font-size: 24px;
 }
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -21,16 +37,24 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
 h1 {
     color: #333;
 }
+
 p {
     color: #555;
     font-size: 18px;
 }
+
+ul {
+    list-style: none;
+}
+
 .section {
     margin-top: 30px;
 }
+
 .section h2 {
     color: #333;
 }
