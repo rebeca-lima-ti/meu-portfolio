@@ -1,56 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --raisin-black: #2e211c;
-    --cambridge-blue: #9cbab7;
-    --pearl: #eae0c7;
-    --ruddy-brown: #c06226;
-    --saddle-brown: #984619;
+    --black-chocolate: #231416;
+    --catawba: #753b41;
+    --tuskan-red: #784b4a;
+    --lilac-luster: #b89da7;
+    --platinum: #e5dce2;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--raisin-black);
+    background-color: var(--black-chocolate);
     text-align: center;
 }
 
+/* header */
+
+.head-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navbar */
+
+.nav-color {
+    --bs-nav-link-color: var(--platinum); --bs-nav-pills-link-active-color: var(--black-chocolate); --bs-nav-pills-link-active-bg: var(--lilac-luster);
+}
+
+.nav>li>button:hover {
+    color: var(--lilac-luster);
+    transform: scale(1.07);
+}
+
+.nav>li>button {
+    transition: ease-in-out 0.3s;
+}
+
+.bg-color {
+    background-color: var(--tuskan-red);
+}
+
+/* main */
+
 .nome {
     margin-bottom: 0;
-    font-size: 55px;
     font-weight: 1000;
-    color: var(--pearl);
+    color: var(--lilac-luster);
 }
 
 .port {
     margin: 0;
-    font-size: 40px;
     font-weight: 800;
 }
 
 header {
-    background-color: var(--saddle-brown);
-    color: var(--pearl);
+    background-color: var(--catawba);
+    color: var(--lilac-luster);
     padding: 20px;
-    font-size: 24px;
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
-    background: var(--pearl);
+    background: var(--tuskan-red);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 h1 {
-    color: #333;
+    color: var(--platinum);
 }
 
 p {
-    color: #555;
+    color: var(--platinum);
     font-size: 18px;
 }
 
@@ -63,5 +90,5 @@ ul {
 }
 
 .section h2 {
-    color: #333;
+    color: var(--platinum);
 }
