@@ -11,43 +11,48 @@
 </head>
 
 <body>
-    <header class="head-grid">
-        <h3>Rebeca</h3>
-        <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-color rounded-5 shadow-xl nav-color " id="pillNav2" role="tablist">
+    <nav class="nav-flex">
+        <h1 class="h1">Portfólio</h1>
+        <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-color rounded-5 shadow-xl nav-color col-xl-4" id="pillNav2" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
+              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Sobre mim</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contato</button>
             </li>
         </ul>
+    </nav>
+    <header class="bg-image flex">
+        <section>
+            <h1 class="display-1">Rebeca Lima</h1>
+            <h5 class="display-5">Hello World! I am a beginner <mark class="mark">Software Developer</mark></h5>
+        </section>
+        <section>
+            <img class="img" src="static/img/livro-gato-menina.jpg" height="300px" width="300px">
+        </section>
     </header>
     <main class="container">
-        <section>
-            <h1 class="display1">Rebeca Lima</h1>
-            <h2 class="port">PORTFÓLIO</h2>
-        </section>
-        <aside>
-            <h1>Sobre Mim</h1>
-            <p>Olá! Meu nome é Rebeca Lima e este é o meu portfólio. Tenho 19 anos, sou uma desenvolvedora de software iniciante e estudante de Desenvolvimento de Software Multiplataforma na Fatec de São José dos Campos. Aqui você encontrará informações sobre meus projetos e habilidades. Fique à vontade para explorar!</p>
-        </aside>
-        <aside class="section">
-            <h2>Habilidades</h2>
+        <article class="article col-xl-6">
+            <h1 class="h1-main">Sobre Mim</h1>
+            <p>Olá! Meu nome é Rebeca Lima e este é o meu portfólio. Tenho 19 anos, sou uma desenvolvedora de software iniciante e estudante de Desenvolvimento de Software Multiplataforma na Fatec de São José dos Campos e com hiperfoco em esmaltes nas horas vagas. Aqui você encontrará informações sobre meus projetos e habilidades. Fique à vontade para explorar!</p>
+        </article>
+        <section class="section col-xl-6">
+            <h1 class="h1-main">Habilidades</h1>
             <p>Minhas principais habilidades incluem:</p>
             <ul>
                 <li>HTML e CSS</li>
                 <li>Python e Flask</li>
                 <li>Banco de Dados</li>
             </ul>
-        </aside>
+        </section>
     </main>
     <footer>
         <section class="section">
             <h2>Contato</h2>
-            <p>Você pode entrar em contato comigo pelo e-mail: <strong>seuemail@example.com</strong></p>
+            <p>Você pode entrar em contato comigo pelo e-mail: <strong>becaln.ti0@gmail.com</strong></p>
         </section>
     </footer>
 </body>
