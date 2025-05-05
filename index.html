@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
-<body>
+<body class="grid-container">
     <nav class="nav-flex">
         <h1 class="h1">Portfólio</h1>
         <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-color rounded-5 shadow-xl nav-color col-xl-4" id="pillNav2"
             role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab"
+                <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" data-target="home" role="tab"
                     aria-selected="true">Home</button>
             </li>
             <li class="nav-item" role="presentation">
@@ -29,7 +29,7 @@
             </li>
         </ul>
     </nav>
-    <header class="bg-image flex">
+    <header id="home" class="bg-image flex">
         <section>
             <h1 class="display-1">Rebeca Lima</h1>
             <h6 class="display-6">Hello World! I am a beginner <mark class="mark">Software Developer</mark></h6>
@@ -37,22 +37,22 @@
         <section class="head-img">
             <img class="img" src="static/img/livro-gato-menina.jpg" height="300px" width="300px">
             <div class="cont-badges">
-                <a href="https://github.com/rebeca-lima-ti" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e5dce2" stroke-width="1.1666666666666667" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github cont-badge"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
-                <a href="https://www.instagram.com/becaaalima?igsh=MXBra3A4NWVmbDc2eA==" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e5dce2" stroke-width="1.1666666666666667" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram cont-badge"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-                <a href="https://www.linkedin.com/in/rebeca-lima-925611359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e5dce2" stroke-width="1.1666666666666667" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin cont-badge"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
-                <a href="mailto:becaln.ti0@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e5dce2" stroke-width="1.1666666666666667" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail cont-badge"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+                <a href="https://github.com/rebeca-lima-ti" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e5dce2" stroke-width="1.1666666666666667" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github cont-badge"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+                <a href="https://www.instagram.com/becaaalima?igsh=MXBra3A4NWVmbDc2eA==" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e5dce2" stroke-width="1.1666666666666667" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram cont-badge"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                <a href="https://www.linkedin.com/in/rebeca-lima-925611359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e5dce2" stroke-width="1.1666666666666667" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin cont-badge"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                <a href="mailto:becaln.ti0@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e5dce2" stroke-width="1.1666666666666667" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail cont-badge"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
             </div>
         </section>
     </header>
     <main id="about-me" class="container">
-        <article class="col-xl-5">
+        <article>
             <h1 class="h1-main">Sobre Mim</h1>
             <p class="sobre-mim">Olá! Meu nome é Rebeca Lima e este é o meu portfólio. Tenho 19 anos, sou uma desenvolvedora de software
                 iniciante e estudante de Desenvolvimento de Software Multiplataforma na Fatec de São José dos Campos e
                 com hiperfoco em esmaltes nas horas vagas. Aqui você encontrará informações sobre meus projetos e
                 habilidades. Fique à vontade para explorar!</p>
         </article>
-        <section class="section col-xl-5">
+        <section class="section">
             <h1 class="h1-main">Habilidades</h1>
             <div class="techs-icons">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30"
@@ -66,7 +66,8 @@
                 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=rebeca-lima-ti&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=darcula&hide_border=false&order=2" height="150" alt="languages graph"/>
             </div>
         </section>
-        <article class="col-xl-10">
+        <hr class="divisor">
+        <article class="proj-column">
             <h1 class="h1-main">Projetos</h1>
             <div id="projects" class="projects">
                 <section class="project">
@@ -76,6 +77,7 @@
                         <p class="text-proj">Este projeto é uma API (Aprendizado por Projetos Integrados) desenvolvida durante o primeiro semestre do curso de Desenvolvimento de Software Multiplataforma da Fatec de São José dos Campos para monitoramento de tendências do mercado de importação e exportação no estado de São Paulo.</p>
                     </div>
                 </section>
+                
             </div>
         </article>
     </main>

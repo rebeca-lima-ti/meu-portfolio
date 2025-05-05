@@ -5,11 +5,6 @@
     src: url(../fonts/angella-white-font/AngellaWhitePersonalUseOnly-R9wpv.ttf);
  }
 
-@font-face {
-    font-family: "Quiche";
-    src: url(../fonts/quiche-display-bold-maisfontes.addc/quiche-display-bold.ttf);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +24,12 @@ body {
     background-color: var(--black-chocolate);
     text-align: center;
     scroll-behavior: smooth;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+
 }
 
 /* navbar */
@@ -124,10 +125,10 @@ body {
 }
 
 .cont-badge {
-    height: 36px;
-    width: 36px;
+    height: 45px;
+    width: 45px;
     border: 1.5px solid var(--platinum);
-    border-radius: 50%;
+    border-radius: 30%;
     padding: 7px;
     transition: 0.3s ease-in-out;
 }
@@ -143,23 +144,26 @@ body {
 /* main */
 
 .container {
-    display: flex;
-    width: auto;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: first baseline;
-    margin: 5% 12% 5% 12%;
+    display: grid;
+    grid-template-columns: auto auto;
     background: var(--tuskan-red);
-    padding: 25px;
-    box-shadow: 0 0 20px rgba(120, 75, 74, 1);
-    gap: 15px;
-    border-radius: 10px;
+    padding: 2em;
+    margin-top: 2em;
+    border-radius: 1%;
+    gap: 2em;
+}
+
+.divisor {
+    height: 7px;
+    border: none;
+    background-color: var(--black-chocolate);
+    grid-column: 1/3;
 }
 
 .h1-main {
     font-family: "Angella White", cursive;
     color: var(--soft-coral);
-    font-size: 55px;
+    font-size: 65px;
 }
 
 .sobre-mim {
@@ -180,16 +184,22 @@ body {
     align-items: center;
 }
 
+.proj-column {
+    grid-column: 1/3;
+}
+
 .projects {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2em;
 }
 
 .project {
     display: flex;
-    flex-direction: row;
-    gap: 7%;
-    padding-top: 2%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    gap: 1em;
 }
 
 .img-proj {
