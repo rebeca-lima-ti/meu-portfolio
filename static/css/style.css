@@ -13,10 +13,10 @@
 :root {
     --black-chocolate: #231416;
     --catawba: #753b41;
-    --tuskan-red: #784b4a;
-    --lilac-luster: #b89da7;
-    --soft-coral: #ffc8b9;
-    --platinum: #e5dce2;
+    --tuskan-red: #784a4a;
+    --lilac-luster: #b89da2;
+    --doll-ribbon: #dfb0bb;
+    --pearl: #e5dcde;
 }
 
 body {
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-color {
-    --bs-nav-link-color: var(--platinum); --bs-nav-pills-link-active-color: var(--black-chocolate); --bs-nav-pills-link-active-bg: var(--lilac-luster);
+    --bs-nav-link-color: var(--pearl); --bs-nav-pills-link-active-color: var(--black-chocolate); --bs-nav-pills-link-active-bg: var(--lilac-luster);
 }
 
 .nav>li>button:hover {
@@ -89,7 +89,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 7em;
-    margin-top: 3em;
+    padding-top: 3.5em;
     box-shadow: 0 0 10px 0 rgb(0, 0, 0);
 }
 
@@ -113,7 +113,7 @@ body {
 }
 
 .mark {
-    background-color: var(--soft-coral);
+    background-color: var(--doll-ribbon);
     color: var(--black-chocolate);
     padding: 0;
 }
@@ -134,7 +134,7 @@ body {
 .cont-badge {
     height: 45px;
     width: 45px;
-    border: 0.12em solid var(--platinum);
+    border: 0.12em solid var(--pearl);
     border-radius: 30%;
     padding: 0.5em;
     transition: 0.3s ease-in-out;
@@ -152,7 +152,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     background: var(--tuskan-red);
     padding: 2em;
     margin-top: 2em;
@@ -169,12 +169,12 @@ body {
 
 .h1-main {
     font-family: "Angella White", cursive;
-    color: var(--soft-coral);
+    color: var(--doll-ribbon);
     font-size: 65px;
 }
 
 .sobre-mim {
-    color: var(--platinum);
+    color: var(--pearl);
     font-size: 18px;
 }
 
@@ -198,15 +198,15 @@ body {
 .projects {
     display: grid;
     grid-template-columns: auto auto;
+    padding-top: 2em;
     gap: 2em;
 }
 
 .project {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 2em;
-    row-gap: 1em;
+    column-gap: 2em;
 }
 
 .img-proj {
@@ -226,18 +226,18 @@ body {
 .proj-title {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    color: var(--platinum);
+    color: var(--pearl);
 }
 
 .mark-proj {
     background-color: var(--catawba);
-    color: var(--platinum);
+    color: var(--pearl);
     padding: 0;
 }
 
 .text-proj {
     font-size: 18px;
-    color: var(--platinum);
+    color: var(--pearl);
 }
 
 /* main end */
@@ -253,7 +253,7 @@ body {
 .text-foot {
     font-size: 14px;
     font-weight: 200;
-    color: var(--platinum);
+    color: var(--pearl);
     margin: 0;
 }
 
@@ -262,9 +262,89 @@ body {
 /* responsividade */
 
 @media (max-width: 600px){
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* navbar */
+
     .h1 {
         font-family: "Angella White", cursive;
-        padding-left: 1em;
-        font-size: 40px;
+        padding-left: 0.5em;
+        font-size: 35px;
+        margin: 0;
     }
+
+    .nav {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .nav-flex {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+        row-gap: 0.5em;
+    }
+
+    /* navbar end */
+
+    /* header */
+
+    .flex {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 1.5em;
+        padding: 2em 1em;
+        padding-top: 8em;
+        box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    }
+
+    .bg-image {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img {
+        border-radius: 50%;
+        height: 230px;
+        width: 230px;
+    }
+
+    .display-1 {
+        font-size: 75px;
+    }
+
+    .display-6 {
+        font-size: 30px;
+    }
+
+    /* header end */
+
+    /* main */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1em;
+    }
+
+    /* main end */
+
 }
