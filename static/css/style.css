@@ -89,8 +89,12 @@ body {
     justify-content: space-between;
     align-items: center;
     column-gap: 3em;
-    padding: 9em 5em 3em 5em;
+    padding: 8em 5em 3em 5em;
     box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
+
+.head-info {
+    
 }
 
 .img {
@@ -117,6 +121,14 @@ body {
     background-color: var(--doll-ribbon);
     color: var(--black-chocolate);
     padding: 0;
+}
+
+.button-head {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    color: var(--pearl);
+    background-color: #231416;
+    border: solid 0.1em var(--doll-ribbon);
+    border-radius: 25%;
 }
 
 .head-img {
@@ -270,10 +282,7 @@ body {
     /* navbar */
 
     .h1 {
-        font-family: "Angella White", cursive;
-        padding-left: 0.5em;
-        font-size: 35px;
-        margin: 0;
+        display: none;
     }
 
     .nav {
